@@ -13,11 +13,16 @@
   </head>
   <body>
 
+    <nav class="sticky-nav">
+      <div class="container">
+        <a href="#contact">Contact Me</a>
+      </div>
+    </nav>
+
     <header>
       <div class="container">
         <h1>Brutally Honest Editing &amp; Feedback</h1>
         <p class="hero-text">Ready to cut the crap and learn how good your writing really is? Maybe you're a misunderstood genius. Maybe you suck. If you want to find out one way or the other, <strong>hire me</strong>. I'll give you the brutally honest feedback you need.</p>
-        <a href="#contact" class="cta-button">Get Honest Feedback</a>
       </div>
     </header>
 
@@ -141,12 +146,12 @@
           <h2>Hire Me If&hellip;</h2>
           <p>&hellip;you want to finally get a straight, clear, honest assessment of your writing. You'll come away being more assured that you should keep writing after all, or you'll learn that your precious manuscript is worthless trash. In either case you'll have more clarity than you do now!</p>
 
-          <h3>What I Work With</h3>
+          <h3>Types of Writing You Can Send Me</h3>
           <p>Personal essays, memoirs, and other nonfiction. Short stories and novels.</p>
           <p>I'm not a big fan of contemporary poetry or romance novels. If you really want me to review this type of thing, write to me about it, as I do consider these things on a case by case basis.</p>
 
-          <h3>My Rate</h3>
-          <p><strong>My rate is $30 per hour.</strong> How many hours it will take depends on the nature of your manuscript and how long it is. An essay may take less than an hour. An 80,000 word novel? More time than that, but I'd need to see the manuscript to give an estimate.</p>
+          <h3>For the Modest Fee of&hellip;</h3>
+          <p><strong>A mere $30 per hour.</strong> How many hours it will take depends on the nature of your manuscript and how long it is. An essay may take less than an hour. An 80,000 word novel? More time than that, but I'd need to see the manuscript to give an estimate.</p>
           <p>One thing I can tell you for sure is you will never be blindsided by cost overruns or kept in the dark about progress. I'm happy to set hour caps so you can budget how much you want to spend, and I'll always work to keep you up to date on where I am in your manuscript.</p>
           <hr class="section-divider" id="contact" />
           <p>Ready to get started? Fill out the form and I'll get back to you.</p>
@@ -179,6 +184,11 @@
               <label for="message">Describe your manuscript (type, word count, what you're looking for)</label>
               <textarea id="message" name="message" data-fs-field rows="5" required></textarea>
               <span data-fs-error="message" class="form-error"></span>
+            </div>
+            <div class="form-field">
+              <label for="attachment">Attach a document <span class="form-optional">(optional)</span></label>
+              <p class="form-hint">Have a manuscript or other document? Attach it here. If you have a URL to send, paste it in the text field above.</p>
+              <input type="file" id="attachment" name="attachment" />
             </div>
             <button type="submit" data-fs-submit-btn class="cta-button">Send</button>
           </form>
@@ -246,7 +256,7 @@
 
   .hero-text {
     font-size: 1.2rem;
-    color: #444;
+    color: #1a1a1a;
     margin-bottom: 2rem;
   }
 
@@ -265,6 +275,30 @@
 
   .cta-button:hover {
     background: #a93226;
+  }
+
+  /* Sticky nav */
+  .sticky-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 0.5rem 0;
+    text-align: right;
+  }
+
+  .sticky-nav a {
+    color: #1a1a1a;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+  }
+
+  .sticky-nav a:hover {
+    color: #c0392b;
   }
 
   /* Main sections */
@@ -442,6 +476,26 @@
 
   .form-field textarea {
     resize: vertical;
+  }
+
+  .form-optional {
+    font-weight: 400;
+    color: #777;
+    font-size: 0.9rem;
+  }
+
+  .form-hint {
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0.25rem 0 0.5rem;
+  }
+
+  .form-field input[type="file"] {
+    border: none;
+    padding: 0;
+    font-size: 0.95rem;
+    background: transparent;
   }
 
   .form-error {
