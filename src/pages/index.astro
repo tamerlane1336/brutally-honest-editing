@@ -22,7 +22,7 @@
     <header>
       <div class="container">
         <h1>Brutally Honest Editing &amp; Feedback</h1>
-        <p class="hero-text">Ready to cut the crap and learn how good your writing really is? Maybe you're a misunderstood genius. Maybe you suck. If you want to find out one way or the other, <strong>hire me</strong>. I'll give you the brutally honest feedback you need.</p>
+        <p class="hero-text">Ready to cut the crap and learn how good your writing really is? Maybe you're a misunderstood genius. Maybe your writing sucks. If you want to find out one way or the other, <strong>hire me</strong>. I'll give you the brutally honest feedback you need.</p>
       </div>
     </header>
 
@@ -61,6 +61,12 @@
           <p>Well then, why not show your writing to ChatGPT or Claude? They're objective, right?</p>
           <p>It's true that AI will give you more detailed and useful feedback than mom or your friend from work. But it's still governed by "safety features" and a general bias toward being nice.</p>
           <p>Do you think the people who profit from AI want a news story about how some writer jumped off a bridge after the AI was too harsh critiquing his novel? Or get complaints from parents that the AI crushed their kid's hopes and dreams? Protecting their creators is more important than giving honest feedback. These large language models have a built-in reason to keep you happy and not push too far.</p>
+
+          <div class="objection">
+            <p class="objection-label">Brutally Honest Objection</p>
+            <p class="objection-quote">"Actually I can directly tell ChatGPT to be extra brutal and it will be."</p>
+            <p class="objection-reply">If the AI is harsh just because you ask it to be, that isn't better feedback. It can generate plausible-sounding criticism all day without knowing if your book works. I can tell you whether the thing lands or stumbles, not just manufacture objections on command.</p>
+          </div>
         </section>
 
         <aside class="aside-box">
@@ -80,6 +86,26 @@
           <p>Sure, if you put your writing in front of enough people, you'll eventually learn if it resonates with anybody, but that's a very slow process. And it doesn't tell you much about whether the manuscript you have in front of you, right now, is any good.</p>
           <p><strong>With me you will get the brutal honesty you need. You'll learn what an objective reader thinks about your writing.</strong></p>
         </section>
+
+        <div class="comparison-box">
+          <h2>Who Would You Rather Trust With Your Writing?</h2>
+          <div class="comparison-grid">
+            <div class="comparison-header them-header">Them</div>
+            <div class="comparison-header me-header">Me</div>
+
+            <div class="them-cell">"I liked it."</div>
+            <div class="me-cell">I found the first three chapters of this to be very entertaining. You do a good job of taking a character with a lot of unlikeable qualities and making him understandable and interesting. Chapters Four and Five confused me, though. Like, why are we jumping around chronologically in the narrative now? It seemed arbitrary.</div>
+
+            <div class="them-cell">"That part with the dog was cute. I love dogs!"</div>
+            <div class="me-cell">The dog scene was well written but really slowed down the flow of the chapter. I'd shorten the beginning part, or even just remove the whole thing.</div>
+
+            <div class="them-cell">"Sorry, I've been too busy to read it yet."</div>
+            <div class="me-cell">See the document for my edits and feedback.</div>
+
+            <div class="them-cell">"That part in the middle was kind of icky, does it really need to be there?"</div>
+            <div class="me-cell">The graphic nature of this scene was definitely memorable. I'm not a big horror fan and perhaps people who are would like it a lot. But if you're trying to appeal to a wider audience, this is over the top.</div>
+          </div>
+        </div>
 
         <section class="section">
           <h2>Who Am I to Give Advice?</h2>
@@ -126,6 +152,12 @@
           <p>There's something I think it's worth being clear about. It's easy to equate honesty with negativity. But it's not about that, nor is honesty about being "balanced". Sometimes things really suck. Other times they are great. Looking for a balance isn't being honest.</p>
           <p>No, honesty is really about being objective and fully voicing what I think, bad and good.</p>
           <p>If your writing is good, I'll say that and I won't hold back on my praise. I <em>want</em> to like your writing. I'm spending my time reading it, after all. It's just if your writing is bad, I'll say that, too.</p>
+
+          <div class="objection tilt-right">
+            <p class="objection-label">Brutally Honest Objection</p>
+            <p class="objection-quote">"This is just your opinion."</p>
+            <p class="objection-reply">Correct. All feedback is opinion plus pointing out writing rules. Mine's just the opinion of someone with no reason to flatter you.</p>
+          </div>
         </section>
 
         <aside class="aside-box">
@@ -144,7 +176,7 @@
 
         <section class="section hire-section" id="hire">
           <h2>Hire Me If&hellip;</h2>
-          <p>&hellip;you want to finally get a straight, clear, honest assessment of your writing. You'll come away being more assured that you should keep writing after all, or you'll learn that your precious manuscript is worthless trash. In either case you'll have more clarity than you do now!</p>
+          <p>&hellip;you want to finally get a straight, clear, honest assessment of your writing. You'll come away being more assured that you should keep writing after all, or you'll learn that your precious manuscript needs major surgery, and why. In either case you'll have more clarity than you do now!</p>
 
           <h3>Types of Writing You Can Send Me</h3>
           <p>Personal essays, memoirs, and other nonfiction. Short stories and novels.</p>
@@ -185,6 +217,7 @@
               <textarea id="message" name="message" data-fs-field rows="5" required></textarea>
               <span data-fs-error="message" class="form-error"></span>
             </div>
+            <p class="form-note">Feel free to attach a link to your document in the box above, or if you need to attach something that has no link, just finish this form and I'll send you an email address where you can send your document.</p>
             <button type="submit" data-fs-submit-btn class="cta-button">Send</button>
           </form>
         </section>
@@ -389,6 +422,116 @@
     border-radius: 4px;
   }
 
+  /* Post-it objections */
+  .objection {
+    background: #fff9c4;
+    padding: 1.75rem 2rem;
+    max-width: 340px;
+    margin: 2rem auto;
+    box-shadow: 4px 5px 16px rgba(0,0,0,0.15);
+    transform: rotate(-2deg);
+  }
+
+  .objection.tilt-right {
+    transform: rotate(-1deg);
+  }
+
+  .objection-label {
+    font-family: Arial, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #999;
+    margin-bottom: 0.6rem;
+  }
+
+  .objection-quote {
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 0.75rem;
+  }
+
+  .objection-reply {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  /* Comparison box */
+  .comparison-box {
+    margin-bottom: 2.8rem;
+  }
+
+  .comparison-box h2 {
+    text-align: center;
+    margin-bottom: 1.25rem;
+    text-wrap: balance;
+  }
+
+  .comparison-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1.5px solid #1a1a1a;
+  }
+
+  .comparison-header {
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.75rem 1rem;
+    text-align: center;
+  }
+
+  .them-header {
+    background: #e0e0e0;
+    color: #555;
+    border-right: 1.5px solid #1a1a1a;
+  }
+
+  .me-header {
+    background: #1a1a1a;
+    color: #fff;
+  }
+
+  .them-cell,
+  .me-cell {
+    padding: 1rem 1.25rem;
+    border-top: 1px solid #ddd;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .them-cell {
+    background: #f5f5f5;
+    color: #1a1a1a;
+    font-style: italic;
+    border-right: 1.5px solid #1a1a1a;
+  }
+
+  .me-cell {
+    background: #fff;
+  }
+
+  @media (max-width: 560px) {
+    .comparison-grid {
+      grid-template-columns: 1fr;
+    }
+    .them-header {
+      border-right: none;
+      border-bottom: 1px solid #ccc;
+    }
+    .them-cell {
+      border-right: none;
+      border-bottom: none;
+    }
+    .me-header {
+      border-top: 1.5px solid #1a1a1a;
+    }
+  }
+
   /* Aside boxes */
   .aside-box {
     background: #f4f4f4;
@@ -471,6 +614,13 @@
 
   .form-field textarea {
     resize: vertical;
+  }
+
+  .form-note {
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1.25rem;
   }
 
   .form-error {
