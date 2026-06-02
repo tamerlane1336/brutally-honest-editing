@@ -54,7 +54,7 @@
           <h3>Professional Editors</h3>
           <img src="/pro-editors.png" alt="Hundreds of editors competing for a handful of clients" class="section-img" />
           <p>Okay, how about hiring a pro? They're honest, right?</p>
-          <p>Here's the thing: professionals need clients. It's estimated there are 122,100 editors in the United States. It's not like they're a scarce resource, and they're fighting over the same clients. They want you to keep giving them money. Some of them might be great editors and will give you genuinely good advice, but there's always this aspect of needing your money. The professional editing space was extremely competitive even before AI came around.</p>
+          <p>Here's the thing: professionals need clients. It's <a href="https://www.careerexplorer.com/careers/editor/job-market/" target="_blank" rel="noopener">estimated</a> there are 122,100 editors in the United States. It's not like they're a scarce resource, and they're fighting over the same clients. They want you to keep giving them money. Some of them might be great editors and will give you genuinely good advice, but there's always this aspect of needing your money. The professional editing space was extremely competitive even before AI came around.</p>
 
           <h3>AI Readers</h3>
           <img src="/ai-readers.png" alt="Terminator robot reading a manuscript" class="section-img" />
@@ -504,16 +504,38 @@
     .comparison-grid {
       grid-template-columns: 1fr;
     }
-    .them-header {
-      border-right: none;
-      border-bottom: 1px solid #ccc;
+    .them-header,
+    .me-header {
+      display: none;
     }
     .them-cell {
       border-right: none;
-      border-bottom: none;
+      border-top: 2px solid #1a1a1a;
+      background: #e0e0e0;
     }
-    .me-header {
-      border-top: 1.5px solid #1a1a1a;
+    .them-cell::before {
+      content: "THEM";
+      display: block;
+      font-family: Arial, sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: #555;
+      margin-bottom: 0.4rem;
+    }
+    .me-cell {
+      border-top: 1px solid #bbb;
+      margin-bottom: 0.75rem;
+    }
+    .me-cell::before {
+      content: "ME";
+      display: block;
+      font-family: Arial, sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: #1a1a1a;
+      margin-bottom: 0.4rem;
     }
   }
 
