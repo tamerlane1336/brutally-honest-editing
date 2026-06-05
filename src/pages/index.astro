@@ -15,6 +15,8 @@
 
     <nav class="sticky-nav">
       <div class="container">
+        <a href="#who-am-i">Who Am I?</a>
+        <a href="#choose-your-pain">Choose Your Pain</a>
         <a href="#contact">Contact Me</a>
       </div>
     </nav>
@@ -106,7 +108,7 @@
           </div>
         </div>
 
-        <section class="section">
+        <section class="section" id="who-am-i">
           <h2>Who Am I?</h2>
           <p>I edit and give feedback to fiction and nonfiction writers on Upwork, where I'm "Top Rated Plus" (top 3% of workers on the platform). Over there, I've had clients say some version of "be honest, I won't be offended." But not everybody like that is on Upwork, so I made this site.</p>
           <p>I've been around writing for a long time, way before AI took off, had my own work torn apart (or gently praised) by friends, family, pros, writing groups, and AI, and I know the difference between feedback that helps and "that was nice, move a comma" feedback that doesn't.</p>
@@ -120,7 +122,7 @@
           <p>Besides, if you don't work with me, someone else will. I'm not trying to base my client list around people I keep happy with generic encouragement.</p>
         </section>
 
-        <section class="section levels-section">
+        <section class="section levels-section" id="choose-your-pain">
           <h2>Choose Your Pain</h2>
           <p>The military has a bunch of nuclear warheads. They're all nuclear, but they're not all the same megaton rating. Different situations call for different types of bombs.</p>
           <p>Kind of like that, there are power levels to honesty.</p>
@@ -291,7 +293,12 @@
     background: #fff;
     border-bottom: 1px solid #ddd;
     padding: 0.5rem 0;
-    text-align: right;
+  }
+
+  .sticky-nav .container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.75rem;
   }
 
   .sticky-nav a {
