@@ -200,6 +200,16 @@
               <span data-fs-error="level" class="form-error"></span>
             </div>
             <div class="form-field">
+              <label for="editing">Are you looking for editing help?</label>
+              <select id="editing" name="editing" data-fs-field>
+                <option value="">Select an option&hellip;</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Not sure yet">Not sure yet</option>
+              </select>
+              <span data-fs-error="editing" class="form-error"></span>
+            </div>
+            <div class="form-field">
               <label for="message">Describe your manuscript (type, word count, what you're looking for)</label>
               <textarea id="message" name="message" data-fs-field rows="5" required></textarea>
               <span data-fs-error="message" class="form-error"></span>
